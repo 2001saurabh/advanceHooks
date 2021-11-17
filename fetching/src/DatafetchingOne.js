@@ -9,7 +9,7 @@ function DatafetchingOne() {
 
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts/2")
+      .get("https://jsonplaceholder.typicode.com/posts/67")
       .then((res) => {
         setLoading(false);
         setPost(res.data);
@@ -27,8 +27,12 @@ function DatafetchingOne() {
       {isLoading ? (
         <div class="ui active centered inline loader"></div>
       ) : (
-        <div className="ui purple header">{post.title}</div>
+        <div>
+          <div className="ui purple dividing header">{post.title}</div>
+          {post.body}
+        </div>
       )}
+      {error ? error : null}
     </div>
   );
 }
