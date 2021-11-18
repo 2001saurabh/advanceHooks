@@ -13,7 +13,7 @@ function Counter() {
   };
   const isEven = useMemo(() => {
     let i = 0;
-    while (i < 200000000) i++;
+    while (i < 2000000000) i++;
     return countOne % 2 === 0;
   }, [countOne]);
   return (
