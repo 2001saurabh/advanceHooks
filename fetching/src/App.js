@@ -1,10 +1,12 @@
 import "./App.css";
 import DatafetchingOne from "./DatafetchingOne";
+import DatafetchingTwo from "./DatafetchingTwo";
 
 function App() {
   return (
     <div className="App">
-      <DatafetchingOne />
+      {/* <DatafetchingOne /> */}
+      <DatafetchingTwo />
     </div>
   );
 }
