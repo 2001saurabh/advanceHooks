@@ -2,7 +2,7 @@ import React from "react";
 import useCounter from "./hook/useCounter";
 
 function CounterTwo() {
-  const [count, Increment, Decrement, Reset] = useCounter();
+  const [count, Increment, Decrement, Reset] = useCounter(5, 5);
   return (
     <div
       className="ui segment container"
