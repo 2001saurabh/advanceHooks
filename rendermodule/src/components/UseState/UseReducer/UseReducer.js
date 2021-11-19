@@ -16,6 +16,8 @@ const reducer = (state, action) => {
 };
 export const UseReducer = () => {
   const [state, dispatch] = useReducer(reducer, initialValue);
+
+  console.log("Usereducer render");
   return (
     <div>
       <div>count ={state}</div>
